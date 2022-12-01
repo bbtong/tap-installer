@@ -11,7 +11,8 @@
 1. Create files containing your credentials under the `creds` folder.
     You can choose to either name them the names you see in `rules.mk` or you can update `rules.mk` to point to your credential files.
 
-    **WARNING:** Make sure you don't have extra new lines at the end of your files as it will cause authentication errors.
+    :warning: **WARNING:** Make sure you don't have extra new lines at the end of your files as it will cause authentication errors.
+    > You should `cat` your files to view the lack of a carriage return, denoted by `%` present at the end of text. Use `fprintf text > file` to solve    this issue.
 
     The expected files are:
     * `creds/tanzu.registry.username`: Your Tanzu Network username
